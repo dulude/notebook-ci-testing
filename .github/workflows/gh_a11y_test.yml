@@ -17,7 +17,7 @@ jobs:
             https://spacetelescope.github.io/notebook-ci-testing/notebooks/MIRI/Coronagraphy/JWPipeNB-MIRI-Coron.html
             https://spacetelescope.github.io/notebook-ci-testing/notebooks/MIRI/Imaging/JWPipeNB-MIRI-imaging.html
             https://spacetelescope.github.io/notebook-ci-testing/notebooks/MIRI/Imaging-TSO/JWPipeNB-MIRI-imaging-TSO.html
-          repository: spacetelescope/notebook-ci-testing
+          repository: dulude/notebook-ci-testing
           include_screenshots: true
           token: ${{ secrets.GH_TOKEN }}
           cache_key: ${{ steps.generate_cache_key.outputs.cache_key }}
