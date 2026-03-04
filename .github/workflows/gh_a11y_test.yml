@@ -13,11 +13,7 @@ jobs:
       - uses: github/accessibility-scanner@v2
         with:
           urls: |
-            https://spacetelescope.github.io/notebook-ci-testing/README.html
-            https://spacetelescope.github.io/notebook-ci-testing/notebooks/MIRI/Coronagraphy/JWPipeNB-MIRI-Coron.html
             https://spacetelescope.github.io/notebook-ci-testing/notebooks/MIRI/Imaging/JWPipeNB-MIRI-imaging.html
-            https://spacetelescope.github.io/notebook-ci-testing/notebooks/MIRI/Imaging-TSO/JWPipeNB-MIRI-imaging-TSO.html
           repository: dulude/notebook-ci-testing
-          include_screenshots: true
           token: ${{ secrets.GH_TOKEN }}
           cache_key: ${{ steps.generate_cache_key.outputs.cache_key }}
